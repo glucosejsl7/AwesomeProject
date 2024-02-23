@@ -1,12 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { PaperProvider } from 'react-native-paper';
+// import TestPaper from './screens/week4/TestPaper';
+import PaperQuiz from './screens/week4/PaperQuiz';
 // import Welcome from './screens/Welcome';
 // import Travel from './screens/week3/Travel';
-import Resort from './screens/week3.1/Resort';
+// import Resort from './screens/week3.1/Resort';
 
 export default function App() {
   return (
-    <Resort />
+    // <Resort />
+    <PaperProvider>
+    <PaperQuiz />
+    </PaperProvider>
   );
 }
 
@@ -16,6 +22,7 @@ export default function App() {
 // import { PaperProvider } from 'react-native-paper';
 // import TestPaper from './screens/week4/TestPaper';
 
+// export default function App() {
 //   return (
 //     // <Welcome />
 //     // <Travel />

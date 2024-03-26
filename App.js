@@ -3,11 +3,17 @@ import { StyleSheet, Text, View } from 'react-native';
 import { PaperProvider } from 'react-native-paper';
 import Health from './screens/week5/Health';
 import ChartKitScreen from './components/week5/ChartKitScreen';
+import Home from './screens/week6/Home';
+import FlatListExample from './screens/week6/FlatListExemple';
 // import TestPaper from './screens/week4/TestPaper';
 // import PaperQuiz from './screens/week4/PaperQuiz';
 // import Welcome from './screens/Welcome';
 // import Travel from './screens/week3/Travel';
 // import Resort from './screens/week3.1/Resort';
+import { NavigationContainer } from '@react-navigation/native';
+import HomeStack from './navigations/HomeStack';
+import BottomTab from './navigations/BottomTab';
+import RootStack from './navigations/RootStack';
 
 export default function App() {
   return (
@@ -16,7 +22,14 @@ export default function App() {
     // <PaperQuiz />
     // </PaperProvider>
     // <Health />
-    <ChartKitScreen />
+    // <ChartKitScreen />
+    // <Home />
+    // <FlatListExample />
+    <NavigationContainer>
+      {/* <HomeStack /> */}
+      {/* <BottomTab /> */}
+      <RootStack />
+    </NavigationContainer>
   );
 }
 

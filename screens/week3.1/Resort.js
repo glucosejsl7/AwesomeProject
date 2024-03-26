@@ -8,10 +8,12 @@ import Section5 from '../../components/week3.1/Section5';
 import Section6 from '../../components/week3.1/Section6';
 import Section7 from '../../components/week3.1/Section7';
 import Section8 from '../../components/week3.1/Section8';
+import { useNavigation } from '@react-navigation/native';
 
 
 
 export default function Resort() {
+    const navigation = useNavigation();
     return (
         <ScrollView>
             <View style={{ flex: 1, paddingTop: 20 }}>
